@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
 			<%
 				if(login == null){
 			%>
-				<a href="/login/login.jsp" id = "login"> 로그인 </a>
+				<a href="/Library_Project/login/login.jsp" id = "login"> 로그인 </a>
 				<a href="/book/searchBook.jsp" id = "search"> 도서 검색 </a>
 				<a id = "rental"> 도서대출현황 </a>
 				<a id = "quit"> 회원탈퇴</a>
