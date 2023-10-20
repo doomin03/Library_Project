@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 			<%
 				MemberVo login = (MemberVo)session.getAttribute("loginOK");
 			%>
-				<a href="/index.jsp" id = "intro">처음으로</a>
+				<a href="/Library_Project/index.jsp" id = "intro">처음으로</a>
 			<%
 				if(login == null){
 			%>
