@@ -41,7 +41,7 @@ a{
 <body>
 <h2>양영디지털고등학교 도서관 로그인 페이지</h2>
 
-<form action="/login" method="post">
+<form action="/Library_Project/login" method="post">
 	<div class="login_container">
 		<label><b>User ID</b></label>
 		<input type="text" placeholder="Enter UserID" name = "id">
