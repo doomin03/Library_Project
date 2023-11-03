@@ -49,7 +49,7 @@ a{
 		<label>b<b>Password</b></label>
 		<input type="password" placeholder ="Enter Password" name="pwd">
 		<input type="submit" value="Login">
-		<a href="/member/register.jsp">회원가입</a>
+		<a href="/Library_Project/member/register.jsp">회원가입</a>
 	</div>
 </form>
 <%@include file="../footer.jsp" %>

@@ -24,8 +24,7 @@ create table lib_book(
 	rentaled char(1)
 );
 
-drop table lib_book;
-drop sequence book_seq;
+
 create sequence book_seq;
 
 insert into lib_book(book_no, title, author, company, price, rentaled) values(book_seq.nextval, '모모', '미하엘 엔데', '비룡소', 11000, 'f');
@@ -59,5 +58,3 @@ select * from rent_book order by rent_no asc;
 
 
 
-table.sql
-table.sql 표시 중입니다.

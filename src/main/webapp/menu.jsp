@@ -109,33 +109,24 @@ h1, h2, h3, h4, h5, h6 {
 </style>
 </head>
 <body>
-	<div class="wrapper">
-		<header>
-			<h1>양영디지털고등학교 도서관 홈페이지</h1>
-		</header>
-		<div class="row">
-			<div class="side_menu">
-			<%
-				MemberVo login = (MemberVo)session.getAttribute("loginOK");
-			%>
-				<a href="/Library_Project/index.jsp" id = "intro">처음으로</a>
-			<%
-				if(login == null){
-			%>
-				<a href="/Library_Project/login/login.jsp" id = "login"> 로그인 </a>
-				<a href="/book/searchBook.jsp" id = "search"> 도서 검색 </a>
-				<a id = "rental"> 도서대출현황 </a>
-				<a id = "quit"> 회원탈퇴</a>
-			<%
-				}else{
-			%>	
-				<a href="/Library_Project/logout" id = "logout"> 로그아웃 (login.getMemberId)</a>
-				<a href="/book/searchBook.jsp" id = "search">도서 검색</a>
-				<a href="/Library_Project/rentaBook" id = "rental">도서대출현황</a>
-				<a href="/Library_Project/quit" id = "quit"> 회원탈퇴</a>
-			<%
-				}
-			%>
-			</div>
-			<div class="content">
-			
+	 <div class="wrapper">
+        <header>
+            <h1>양영디지털고등학교 도서관 홈페이지</h1>
+        </header>
+        <div class="row">
+            <div class="side_menu">
+<%              MemberVo login = (MemberVo)session.getAttribute("loginOK"); %>
+                    <a href="/Library_Project/index.jsp" id="intro">처음으로</a>
+<%              if (login == null) { %>
+                    <a href="/Library_Project/login/login.jsp" id="login">로그인</a>
+                    <a href="/book/searchBook.jsp" id="search">도서 검색</a>
+                    <a id="rental">도서대출현황</a>
+                    <a id="quit">회원탈퇴</a>
+<%              } else { %>
+                    <a href="/Library_Project/logout" id="logout">로그아웃 (<%= login.getMemberId() %>)</a>
+                    <a href="/book/searchBook.jsp" id="search">도서 검색</a>                    
+                    <a href="/rentalBook" id="rental">도서대출현황</a>
+                    <a href="/Library_Project/quit" id="quit">회원탈퇴</a>
+<%              } %>
+            </div>
+            <div class="content">
